@@ -61,7 +61,7 @@ if test x$have_sdl_lib = xyes ; then
     AC_DEFINE(C_USE_SDL)
     # Don't need SDLmain since we're a library
     LIBS="$LIBS ${SDL_LIBS/-lSDLmain/}"
-    CPPFLAGS="$CPPFLAGS $SDL_CFLAGS -I/usr/include"
+    CPPFLAGS="$CPPFLAGS $SDL_CFLAGS"
 fi
 
 dnl The target cpu checks
